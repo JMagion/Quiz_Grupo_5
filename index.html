@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Trivia Master</h1>
+    <p>Mostre que você é um mestre dos conhecimentos gerais!</p>
+    <button id="btn-tema" aria-label="Alternar modo escuro" class="btn-tema">🌙 Alternar Tema</button>
+</header>
+
+    <main>
+        <section class="card config-section">
+            <h2>Configurar Partida</h2>
+            <form id="form-config">
+                <div class="form-group">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tema">Escolha o Tema:</label>
+                    <select id="tema" name="tema" required>
+                        <option value="">Selecione...</option>
+                        <option value="9">Conhecimentos Gerais</option>
+                        <option value="21">Esportes</option>
+                        <option value="11">Cinema</option>
+                        <option value="15">Videogames</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary">Iniciar Quiz</button>
+            </form>
+        </section>
+
+        <section class="card quiz-section" style="display: none;">
+            <div class="quiz-status">
+                <span>Pergunta 1/10</span>
+                <span>Pontos: 0</span>
+            </div>
+            <h3 class="pergunta">Qual é a capital da Austrália?</h3>
+            <div class="alternativas-grid">
+                <button class="btn-alternativa">Sydney</button>
+                <button class="btn-alternativa">Melbourne</button>
+                <button class="btn-alternativa">Canberra</button>
+                <button class="btn-alternativa">Brisbane</button>
+            </div>
+        </section>
+
+        <section class="card ranking-section">
+            <h2>🏆 Top 5 Jogadores</h2>
+            <ul class="ranking-lista">
+                <li><span>1. Ana</span> <span>100 pts</span></li>
+                <li><span>2. Bruno</span> <span>90 pts</span></li>
+                <li><span>3. Carlos</span> <span>80 pts</span></li>
+                <li><span>4. Daniela</span> <span>70 pts</span></li>
+                <li><span>5. Eduardo</span> <span>60 pts</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Integrador - Programação para Web II</p>
+    </footer>
+</body>
+</html>

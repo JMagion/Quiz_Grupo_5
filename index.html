@@ -8,12 +8,14 @@
 </head>
 <body>
     <header>
-    <h1>Trivia Master</h1>
-    <p>Mostre que você é um mestre dos conhecimentos gerais!</p>
-    <button id="btn-tema" aria-label="Alternar modo escuro" class="btn-tema">🌙 Alternar Tema</button>
-</header>
+        <h1>Trivia Master</h1>
+        <p>Mostre que você é um mestre dos conhecimentos gerais!</p>
+        <button id="btn-tema" aria-label="Alternar modo escuro" class="btn-tema">🌙 Alternar Tema</button>
+    </header>
 
     <main>
+        <div id="mensagem-erro" style="display: none; background: #ffeaa7; color: #d63031; padding: 1rem; border-radius: 4px; font-weight: bold; text-align: center; width: 100%; max-width: 600px;"></div>
+
         <section class="card config-section">
             <h2>Configurar Partida</h2>
             <form id="form-config">
@@ -32,7 +34,6 @@
                         <option value="15">Videogames</option>
                     </select>
                 </div>
-
                 <button type="submit" class="btn-primary">Iniciar Quiz</button>
             </form>
         </section>
@@ -42,29 +43,22 @@
                 <span>Pergunta 1/10</span>
                 <span>Pontos: 0</span>
             </div>
-            <h3 class="pergunta">Qual é a capital da Austrália?</h3>
-            <div class="alternativas-grid">
-                <button class="btn-alternativa">Sydney</button>
-                <button class="btn-alternativa">Melbourne</button>
-                <button class="btn-alternativa">Canberra</button>
-                <button class="btn-alternativa">Brisbane</button>
-            </div>
+            <h3 class="pergunta"></h3>
+            <!-- R3: Lista limpa, gerada pelo JS -->
+            <div class="alternativas-grid"></div>
         </section>
 
         <section class="card ranking-section">
             <h2>🏆 Top 5 Jogadores</h2>
-            <ul class="ranking-lista">
-                <li><span>1. Ana</span> <span>100 pts</span></li>
-                <li><span>2. Bruno</span> <span>90 pts</span></li>
-                <li><span>3. Carlos</span> <span>80 pts</span></li>
-                <li><span>4. Daniela</span> <span>70 pts</span></li>
-                <li><span>5. Eduardo</span> <span>60 pts</span></li>
-            </ul>
+            <!-- R3: Lista limpa, gerada pelo JS -->
+            <ul class="ranking-lista"></ul>
         </section>
     </main>
 
     <footer>
         <p>Projeto Integrador - Programação para Web II</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>

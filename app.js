@@ -11,9 +11,7 @@ const sectionRanking = document.querySelector('.ranking-section');
 const containerErro = document.getElementById('mensagem-erro');
 const btnTema = document.getElementById('btn-tema');
 
-let ranking = [
-    { id: 1, nome: "Ana", pontos: 100, tema: "Esportes" }
-];
+let ranking = [];
 
 // --- REQUISITO BÔNUS: MODO ESCURO COM LOCALSTORAGE ---
 document.addEventListener("DOMContentLoaded", () => {
